@@ -165,6 +165,7 @@ The library supports the following regions:
 `-D` variable | CFG region name | CFG region value | LoRa Spec Reference| Frequency
 ------------|-----------------|:----------------:|:-------------------:|--------
 `-D CFG_eu868` | `LMIC_REGION_eu868` | 1 | 2.1 | EU 863-870 MHz ISM
+`-D CFG_eu433` | `LMIC_REGION_eu433` | 4 | 2.1 | EU 433-435 MHz ISM
 `-D CFG_us915` | `LMIC_REGION_us915` | 2 | 2.2 | US 902-928 MHz ISM
 `-D CFG_au921` | `LMIC_REGION_au921` | 5 | 2.5 | Australia 915-928 MHz ISM
 `-D CFG_as923` | `LMIC_REGION_as923` | 7 | 2.7 | Asia 923 MHz ISM
@@ -177,7 +178,7 @@ according to the region. Some of the differences are listed below.
 
 #### eu868, as923, in866
 
-If the library is configured for EU868, AS923, or IN866 operation, we make
+If the library is configured for EU433, EU868, AS923, or IN866 operation, we make
 the following changes:
 - Add the API `LMIC_setupBand()`.
 - Add the constants `MAX_CHANNELS`, `MAX_BANDS`, `LIMIT_CHANNELS`, `BAND_MILLI`,

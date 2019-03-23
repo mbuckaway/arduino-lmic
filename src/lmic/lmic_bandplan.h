@@ -35,6 +35,8 @@
 
 #if defined(CFG_eu868)
 # include "lmic_bandplan_eu868.h"
+#elif defined(CFG_eu433)
+# include "lmic_bandplan_eu433.h"
 #elif defined(CFG_us915)
 # include "lmic_bandplan_us915.h"
 #elif defined(CFG_au921)
